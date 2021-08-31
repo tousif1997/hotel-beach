@@ -129,7 +129,7 @@ function RoomFilter({ rooms }) {
             />
             <label htmlFor="breakfast">pets</label>
           </div>
-        </div><button type ="submit"className="btn-primary" style={{marginTop:"2%"}}> Submit</button>
+        </div>
         {/* end of extras type */}
        
       </form> 

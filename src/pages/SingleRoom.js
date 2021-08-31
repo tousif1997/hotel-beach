@@ -1,12 +1,28 @@
 import React, { Component } from 'react';
 import defaultBcg from '../images/room-1.jpeg';
-import Hero from "../components/Hero";
 import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
 import { RoomContext } from '../Context';
 import StyledHero from "../components/StyledHero";
 
 export default class SingleRoom extends Component {
+
+    state = { disabled: true };
+
+
+    handleChange = (e) => {
+        if(e.target.value.room<=1) {
+            this.setState({
+                disabled:false
+            });
+        }
+        else {
+            this.setState({
+                disabled: true
+            });
+        }
+    }
+
     constructor(props) {
         super(props)
         // console.log(this.props)
@@ -19,6 +35,7 @@ export default class SingleRoom extends Component {
 
     // }
     render() {
+        
         const { getRoom } = this.context;
         const room = getRoom(this.state.slug);
         if (!room) {
@@ -29,16 +46,17 @@ export default class SingleRoom extends Component {
                 </Link>
             </div>
         }
-        const { name, description, capacity, size, price, extras, breakfast, pets, images } = room
-            const [main, ...defaultImages] = images;
+        const {slug, name, description, capacity, size, price, extras, breakfast, pets, images } = room
+            const [ ...defaultImages] = images;
 
         return (
             <>
                 <StyledHero img={images[0] || this.state.defaultBcg}>
                     <Banner title={`${name} room`}>
-                        <Link to="/login" className="btn-primary">
+                    {localStorage.getItem("userName") ? <Link to ={`/bookingpage/${slug}`} className="btn-primary" disabled={this.state.disabled}>
                             Book Room
-                        </Link>
+                        </Link> : null}
+                        {/* <button disabled={this.state.disabled} className="btn-primary">reserved</button> */}
                     </Banner>
                 </StyledHero>
                 <section className="single-room">
@@ -54,7 +72,7 @@ export default class SingleRoom extends Component {
                         </article>
                         <article className="info">
                             <h3>info</h3>
-                            <h6>price : ${price}</h6>
+                            <h6>price : ₹{price}</h6>
                             <h6>size : {size} SQFT</h6>
                             <h6>
                                 max capacity :

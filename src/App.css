@@ -108,7 +108,7 @@ h6 {
   outline: none;
 }
 .nav-icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--primaryColor);
 }
 .nav-links {
@@ -516,9 +516,25 @@ h6 {
 .container{
   background: rgb(240,222,184);
 background: linear-gradient(0deg, rgba(240,222,184,1) 0%, rgba(202,249,250,1) 100%);
+height: 700px;
 }
 
 
+.bookingform{
+  margin-left: 30%;
+  margin-right: 30%;
+
+}
+
+/* 
+.logout{
+  color: #a59887;
+  height: 42px;
+  width: 211px;
+  justify-self: left;
+  margin-left: 189px;
+ 
+} */
 
 
 .App {
@@ -614,17 +630,17 @@ background: linear-gradient(0deg, rgba(240,222,184,1) 0%, rgba(202,249,250,1) 10
   width: 85%;
   background-color: transparent;
   border: none;
-  color: white;
+  color: rgb(10, 10, 10);
   outline: none;
   border-bottom: 1px solid #445366;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 200;
   padding-bottom: 10px;
   margin-top: 10px;
 }
  
 .formFieldInput::placeholder {
-  color: #616e7f;
+  color: #929ca8;
 }
  
 .formFieldButton {

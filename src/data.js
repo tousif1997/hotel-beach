@@ -1,3 +1,5 @@
+// eslint-disable-next-line
+
 import room1 from "./images/details-1.jpeg";
 import room2 from "./images/details-2.jpeg";
 import room3 from "./images/details-3.jpeg";
