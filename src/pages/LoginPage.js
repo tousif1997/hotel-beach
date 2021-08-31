@@ -1,8 +1,7 @@
-// eslint-disable-next-line
+/*eslint-disable*/
 
 import React, { Component } from "react";
 import axios from "axios";
-import { HashRouter as Router } from "react-router-dom";
 import Title from '../components/Title';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

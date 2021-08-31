@@ -1,4 +1,4 @@
-// eslint-disable-next-line
+/*eslint-disable*/
 
 import React from "react";
 import "./App.css";
@@ -14,7 +14,7 @@ import Register from "./pages/Register";
 import LoginPage from "./pages/LoginPage";
 
 function App() {
-  const [isHidden,setIsHidden]=React.useState(false);
+
   return (
     <>
       <Navbar />

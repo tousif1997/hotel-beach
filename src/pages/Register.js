@@ -1,11 +1,8 @@
-// eslint-disable-next-line
+/*eslint-disable*/
 
 import React, { useState } from "react";
 import axios from "axios";
 import Title from '../components/Title';
-import { HashRouter as Router } from "react-router-dom";
-// import Register from './Register';
-// import LoginPage from './LoginPage'
 import { useHistory } from "react-router";
 
 

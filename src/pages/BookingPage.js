@@ -1,4 +1,4 @@
-// eslint-disable-next-line
+/*eslint-disable*/
 
 import React, { useState, useEffect } from "react";
 import Title from "../components/Title";

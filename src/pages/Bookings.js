@@ -1,4 +1,4 @@
-// eslint-disable-next-line
+/*eslint-disable*/
 
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';

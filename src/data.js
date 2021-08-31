@@ -1,4 +1,4 @@
-// eslint-disable-next-line
+/*eslint-disable*/
 
 import room1 from "./images/details-1.jpeg";
 import room2 from "./images/details-2.jpeg";
